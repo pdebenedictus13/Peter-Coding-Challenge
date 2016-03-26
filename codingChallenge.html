@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">	
+	<title></title>
+	<meta name="description" content="code challenge">
+	<meta name="author" content="">
+	<script type="text/javascript" src="code-test.json"></script>
+	<link rel="stylesheet" type="text/css" href="codingChallenge.css">
+
+		<!--[if lt IE 9]>
+
+		<![endif]-->
+	</head>
+	<body>
+		<div id="navBar">
+			<div id="logo">
+				<img src="logo.png">
+				<span>URBANK</span>
+			</div>
+			<ul>
+				<li id="home"><a href="">home</a></li>
+				<li id="employee"><a href="">employee</a></li>
+				<li id="company" class="activeHeader"><a href="">company</a></li>
+				<li id="services"><a href="">services</a></li>
+				<li id="contact"><a href="">contact</a></li>
+			</ul>
+		</div>
+		<div id="mainBody">
+			<div class="mainHeader">
+				<span>Best Bank Ever!</span>
+			</div>
+			<div class="topText">
+				<span>Pellentesque habitant morbi tristique senectus et netus et <a href="#">maesuada</a> fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris <a href="#">placerat</a> eleifend leo. Quisque sit amet est et spaien ullamcorper pharetra.</span>
+			</div>
+			<div class="reasons">
+				<span>Reasons We're Awesome:</span>
+				<ul>
+					<li>Lorem ipsum dolor sit amet.</li>
+					<li>Aliquam tincidunt mauris eu risus.</li>
+					<li>Lorem ipsum dolor sit amet.</li>
+					<li>Lorem ipsum dolor sit amet.</li>
+					<li>Vestibulum auctor dapibus neque.</li>
+				</ul>
+			</div>
+			<div id="infoBox">
+				<span class="title">Amazing Mobile Info</span>
+				<span class="content">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.</span>
+			</div>
+			<img src="phone.png" class="phoneImage">
+			<div id="ratesHeader">
+				<span class="rates">Rates</span>
+				<span class="separator">|</span>
+				<span class="check">Check them out.</span>
+			</div>
+			<div id="ratesTable"></div>
+			<div id="tableNote"><sup>*</sup>Based on $50,000 deposit.</div>
+		</div>
+		<div id="sideBar">
+			<div class="loginButton" onclick="loginButton()">
+				<span>Login</span>
+			</div>
+			<div id="tabs">
+				<ul>
+					<li id="liTab1" onclick="tab1('tab1')"><a id="tab1Link">News</a></li>
+					<li id="liTab2" onclick="tab2('tab2')"><a id="tab2Link">Archive</a></li>
+				</ul>
+				<div id="contentArea">
+					<div id="tab1">
+						<div>
+							<span class="title">Lorem ipsum dolor</span>
+							<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+						</div>
+						<div>
+							<span class="title">Lorem ipsum dolor</span>
+							<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+						</div>
+						<div>
+							<span class="title">Lorem ipsum dolor</span>
+							<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+						</div>
+					</div>
+
+					<div id="tab2" style="display: none;">
+						<span class="title">Lorem ipsum dolor</span>
+						<span class="title">Lorem ipsum dolor</span>
+						<span class="title">Lorem ipsum dolor</span>
+						<span class="title">Lorem ipsum dolor</span>
+						<span class="title">Lorem ipsum dolor</span>
+						<span class="title">Lorem ipsum dolor</span>
+						<span class="title">Lorem ipsum dolor</span>
+						<span class="title">Lorem ipsum dolor</span>
+					</div>
+				</div> 
+			</div> 		
+		</div>
+		<div id="footer">
+			<ul class="nav navTabs">
+				<li class="copyright">&copy; 2014 URBank</li>
+				<li>Home</li>
+				<li>employee</li>
+				<li class="activeFooter">company</li>
+				<li>services</li>
+				<li>contact</li>
+			</ul>
+		</div>
+		<div id="loginContainer" style="display: none"></div>
+		<div id="loginModal" style="display: none">
+			<div class="modalTitle">Sign In To Your Account</div>
+			<div id="closeButton" onclick="modalClose()"><img src="closeButton.png"></div>
+			<div id="username"><span class="loginField">Username</span><input></input></div>
+			<div id="password"><span class="loginField">Password</span><input></input></div>
+			<div class="loginButton">Login</div>
+		</div>
+		<script type="text/javascript" src="codingChallenge.js"></script>
+	</body>
+	</html>
